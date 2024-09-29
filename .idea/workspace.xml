@@ -5,14 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04ed3213-7542-41fa-9c8d-efd26b4e7b63" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/petstagram/accounts/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/petstagram/common/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/petstagram/pets/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/petstagram/photos/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petstagram/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petstagram/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petstagram/common/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/common/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petstagram/pets/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/pets/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petstagram/photos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/photos/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petstagram/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,7 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "00__petstagram",
-    "last_opened_file_path": "G:/Work/Python/2024-09-Django Basics/00. Petstagram/petstagram/templates",
+    "last_opened_file_path": "G:/Work/Python/2024-09-Django Basics/00. Petstagram/petstagram/petstagram/photos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,6 +72,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Work\Python\2024-09-Django Basics\00. Petstagram\petstagram\petstagram\photos" />
+      <recent name="G:\Work\Python\2024-09-Django Basics\00. Petstagram\petstagram\petstagram\pets" />
+      <recent name="G:\Work\Python\2024-09-Django Basics\00. Petstagram\petstagram\petstagram\common" />
       <recent name="G:\Work\Python\2024-09-Django Basics\00. Petstagram\petstagram\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -106,7 +125,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727543326837</updated>
       <workItem from="1727543335664" duration="2505000" />
-      <workItem from="1727600121506" duration="2501000" />
+      <workItem from="1727600121506" duration="4322000" />
     </task>
     <servers />
   </component>
