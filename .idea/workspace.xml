@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04ed3213-7542-41fa-9c8d-efd26b4e7b63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/petstagram/accounts/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/petstagram/common/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/petstagram/pets/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/petstagram/photos/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/petstagram.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/petstagram.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petstagram/common/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/common/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petstagram/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petstagram/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petstagram/common/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/common/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petstagram/pets/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/pets/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/petstagram/pets/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/pets/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petstagram/photos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/photos/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/petstagram/photos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/photos/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petstagram/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,18 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Momchil-Ivanov"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Momchil-Ivanov&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Momchil-Ivanov/Programming-Django-Basics-Sep-2024.git",
-    "accountId": "0d26c032-8aeb-447f-8fb4-919f57ea2f05"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Momchil-Ivanov/Programming-Django-Basics-Sep-2024.git&quot;,
+    &quot;accountId&quot;: &quot;f4b00dc9-911f-4c22-be01-c986b9591235&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -59,6 +60,7 @@
   "keyToString": {
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "00__petstagram",
     "last_opened_file_path": "G:/Work/Python/2024-09-Django Basics/00. Petstagram/petstagram/petstagram/photos",
@@ -67,6 +69,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -111,8 +114,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.22855.92" />
-        <option value="bundled-python-sdk-b068d85d1acf-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.22855.92" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.19072.16" />
+        <option value="bundled-python-sdk-8336bb23522e-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.19072.16" />
       </set>
     </attachedChunks>
   </component>
@@ -126,6 +129,12 @@
       <updated>1727543326837</updated>
       <workItem from="1727543335664" duration="2505000" />
       <workItem from="1727600121506" duration="4322000" />
+      <workItem from="1727721924290" duration="188000" />
+      <workItem from="1727722118811" duration="691000" />
+      <workItem from="1727722822815" duration="157000" />
+      <workItem from="1727723094689" duration="915000" />
+      <workItem from="1727724404631" duration="759000" />
+      <workItem from="1727756003633" duration="1886000" />
     </task>
     <servers />
   </component>
