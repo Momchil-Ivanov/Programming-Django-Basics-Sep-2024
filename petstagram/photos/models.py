@@ -5,6 +5,7 @@ from petstagram.pets.models import Pet
 
 class Photo(models.Model):
     photo = models.ImageField(
+        upload_to='mediafiles',
         validators=[
             MinLengthValidator(5),
         ],
