@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="04ed3213-7542-41fa-9c8d-efd26b4e7b63" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petstagram/pets/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/pets/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/petstagram/pets/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/pets/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petstagram/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/home-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/home-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,29 +49,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "com.codeium.enabled": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "00__petstagram",
-    "last_opened_file_path": "G:/Work/Python/2024-09-Django Basics/00. Petstagram/petstagram/petstagram/photos",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;00__petstagram&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Work/Python/2024-09-Django Basics/00. Petstagram/petstagram/petstagram/photos&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Work\Python\2024-09-Django Basics\00. Petstagram\petstagram\petstagram\photos" />
@@ -136,6 +134,7 @@
       <workItem from="1727723094689" duration="915000" />
       <workItem from="1727724404631" duration="759000" />
       <workItem from="1727756003633" duration="4964000" />
+      <workItem from="1727805572362" duration="1196000" />
     </task>
     <servers />
   </component>
