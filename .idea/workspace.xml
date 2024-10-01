@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04ed3213-7542-41fa-9c8d-efd26b4e7b63" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/petstagram/photos/validators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petstagram/pets/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/pets/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petstagram/pets/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/pets/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petstagram/photos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/petstagram/photos/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +134,7 @@
       <workItem from="1727723094689" duration="915000" />
       <workItem from="1727724404631" duration="759000" />
       <workItem from="1727756003633" duration="4964000" />
-      <workItem from="1727805572362" duration="1196000" />
+      <workItem from="1727805572362" duration="2702000" />
     </task>
     <servers />
   </component>
