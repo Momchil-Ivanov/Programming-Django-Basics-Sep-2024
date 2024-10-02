@@ -1,51 +1,80 @@
 from datetime import datetime
 
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+
+from forumApp.posts.forms import PostBaseForm, PostCreateForm, PostDeleteForm, SearchForm
+from forumApp.posts.models import Post
+
 
 def index(request):
 
     context = {
-        "current_time": datetime.now(),
-        "person": {
-            "age": 20,
-            "height": 190,
-        },
-        "ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "some_text": "Hello",
-        "users": [
-            "Pesho",
-            "Ivan",
-            "Stamat",
-            "Maria",
-            "Magdalena",
-        ]
+        "my_form": '',
     }
 
     return render(request, 'base.html', context=context)
 
+
 def dashboard(request):
+    form = SearchForm()
+    posts = Post.objects.all()
+
+    if request.method == "GET":
+        forms = SearchForm(request.GET)
+
+        if form.is_valid():
+            query = form.cleaned_data['query']
+            posts = posts.filter(title__icontains=query)
+
     context = {
-        "posts": [
-            {
-                "title": "How to create Django project?",
-                "author": "Diyan Kalaydzhiev",
-                "content": "I **really** don't <i>know</i> how to create a project",
-                "created_at": datetime.now(),
-            },
-            {
-                "title": "How to create Django project 1?",
-                "author": "Diyan Kalaydzhiev",
-                "content": "### I really don't know how to create a project",
-                "created_at": datetime.now(),
-            },
-            {
-                "title": "How to create Django project 2?",
-                "author": "Diyan Kalaydzhiev",
-                "content": "I really don't know how to create a project",
-                "created_at": datetime.now(),
-            },
-        ]
+        "posts": posts,
+        "form": form
     }
 
     return render(request, 'posts/dashboard.html', context=context)
+
+
+def add_post(request):
+    form = PostCreateForm(request.POST or None)
+
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save()
+            return redirect('dash')
+
+    context = {
+        "form": form
+    }
+
+    return render(request, 'posts/add-post.html', context=context)
+
+
+def edit_post(request, pk: int):
+    return HttpResponse()
+
+
+def details_page(request, pk: int):
+    post = Post.objects.get(pk=pk)
+
+    context = {
+        "post": post
+    }
+
+    return render(request, 'posts/details-post.html', context=context)
+
+
+def delete_post(request, pk: int):
+    post = Post.objects.get(pk=pk)
+    form = PostDeleteForm(instance=post)
+
+    if request.method == 'POST':
+        post.delete()
+        return redirect('dash')
+
+    context = {
+        "form": form,
+        "post": post,
+    }
+
+    return render(request, 'posts/delete-template.html', context=context)

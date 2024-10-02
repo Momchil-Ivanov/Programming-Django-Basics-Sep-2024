@@ -1,0 +1,4 @@
+<form class="search-bar" action="{% url 'dash' %}" method="get">
+    {{ form }}
+    <button></button>
+</form>
