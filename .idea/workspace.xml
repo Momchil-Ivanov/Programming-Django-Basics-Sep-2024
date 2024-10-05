@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fde8dc2-ea55-4545-bf03-92cefadb58b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/forumApp/posts/mixins.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/search-bar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25c24a90-27a4-4ca0-b143-d6d7b0aeb959.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25c24a90-27a4-4ca0-b143-d6d7b0aeb959.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25c24a90-27a4-4ca0-b143-d6d7b0aeb959/storage_v2/_src_/database/forum_app.A75Aeg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25c24a90-27a4-4ca0-b143-d6d7b0aeb959/storage_v2/_src_/database/forum_app.A75Aeg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forumApp/posts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/posts/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forumApp/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/posts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forumApp/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/posts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forumApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forumApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/posts.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/posts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/posts/add-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/posts/add-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/posts/details-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/posts/details-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/posts/search-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/posts/search-form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +137,7 @@
       <workItem from="1727975756753" duration="10760000" />
       <workItem from="1728018148477" duration="1655000" />
       <workItem from="1728055258627" duration="3205000" />
-      <workItem from="1728110566490" duration="17863000" />
+      <workItem from="1728110566490" duration="18732000" />
     </task>
     <servers />
   </component>
