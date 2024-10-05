@@ -1,4 +1,9 @@
 <form class="search-bar" action="{% url 'dash' %}" method="get">
     {{ form }}
-    <button></button>
+    <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="transparent" stroke="white"></svg>
+    </button>
+    
+    <p style="color: red">The method is: {{ request.method }}</p>
+    <p style="color: red">The x is: {{ x }}</p>
 </form>

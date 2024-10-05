@@ -1,0 +1,7 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+    {% uppercase %}
+    <h1>Hello user!</h1>
+    {% enduppercase %}
+{% endblock %}

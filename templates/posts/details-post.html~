@@ -13,11 +13,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="{% url 'de-post' %}" method="post">
-        {% csrf_token %}
-        {{ form }}
-        <button class="button-9">Submit</button>
-    </form>
+    <div class="posts">
+        <div class="post">
+            <div class="header">
+                <h2>{{ post.title|capfirst }}</h2>
+                <div class="icons">
+                    <a href="{% url 'edit-post' post.pk %}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"></svg>
+                    </a>
+                    <a href="{% url 'delete-post' post.pk %}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" style="fill:red" viewBox="0 0 24 24" fill="none" stroke="currentColor"></svg>
+                    </a>
+                </div>
+            </div>
+            {% if not post.content %}
+                <p>{% lorem 3 p %}</p>
+            {% else %}
+                <p>{{ post.content|markdown }}</p>
+            {% endif %}
+            <div class="post-meta">
+                <span>Posted by {{ post.author| }}</span>
+            </div>
+        </div>
+    </div>
 </body>
     <script src='https://unpkg.com/akar-icons-fonts'></script>
 </html>
