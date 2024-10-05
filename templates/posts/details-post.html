@@ -1,5 +1,7 @@
+{% load crispy_forms_filters %}
 {% load static %}
 {% load markdown_extras %}
+{% load crispy_forms_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +18,9 @@
     <div class="posts">
         <div class="post">
             <div class="header">
+                {% if post.image %}
+                    <img src="{{ post.image.url }}" width="50" height="50" class="img-fluid" alt="{{ post.title|capfirst }}">
+                {% endif %}
                 <h2>{{ post.title|capfirst }}</h2>
                 <div class="icons">
                     <a href="{% url 'edit-post' post.pk %}">
@@ -34,6 +39,33 @@
             <div class="post-meta">
                 <span>Posted by {{ post.author|default:"anonymous"}} on {{ post.created_at|date:"Y-M-d" }}</span>
             </div>
+        </div>
+        <form method="post" class="form-inline">
+            {% csrf_token %}
+            {{ formset.management_form }}
+            <div class="input-group">
+                {% for form in formset %}
+                    <div class="form-row">
+                        {{ form.author | as_crispy_field }}
+                        <div class="input-group-append">
+                            {{ form.content | as_crispy_field }}
+                            <button class="btn btn-primary ml-2" type="submit">Submit</button>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </form>
+        <h2>Comments</h2>
+        <div class="comments-section">
+            {% for comment in comments %}
+                <div class="media mb-3 comment-item">
+                    <img scr="https://via.placeholder.com/50" class="mr-3 rounder-circle comment-avatar">
+                </div>
+                <div class="media-body comment-content">
+                    <h5 class="mt-0 comment-author">{{ comment.author }}</h5>
+                    <p class="comment-text">{{ comment.content }}</p>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </body>

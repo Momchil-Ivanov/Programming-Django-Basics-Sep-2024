@@ -18,6 +18,10 @@ h1 {
     color: #333;
 }
 
+#post-url {
+    text-decoration: none;
+}
+
 .no-posts {
     text-align: center;
 }
@@ -36,13 +40,28 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.post:hover {
+    box-shadow: none;
+}
+
+.post .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons a {
+    text-decoration: none;
+}
+
 .post h2 {
     margin: 0;
     color: #555;
+    text-align: left;
 }
 
 .post p {
     color: #666;
+    text-align: left;
 }
 
 .post-meta {
