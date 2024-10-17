@@ -7,7 +7,7 @@
     <div class="container">
     {% include 'posts/search-form.html' with x='Hello' %}
          <div class="posts">
-        {% for post in posts %}
+        {% for post in  %}
             <a id="post-url" href="{% url 'details-post' post.pk %}">
                          <div class="post">
                     <h2>{{ post.title|capfirst }}</h2>
@@ -15,7 +15,7 @@
                     {% if not post.content %}
                         {% lorem 3 p %}
                     {% else %}
-                        {{ post.content|markdown|ca }}
+                        {{ post.content|markdown|capfirst }}
                     {% endif %}
 
                 <div class="post-meta">

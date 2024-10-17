@@ -8,7 +8,10 @@
         <h1>Hello user!</h1>
     {% enduppercase %}
     
-    {{ dynamic_time }}
+    <h1>You are logged in</h1>
+    
+    {{ static_time|time:"s" }}
+    {{ dynamic_time| }}
 
     <form method="post">
         {{ my_form }}
