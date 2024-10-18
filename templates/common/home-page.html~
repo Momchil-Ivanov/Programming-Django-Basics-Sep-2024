@@ -28,7 +28,7 @@
 
                     <!-- If there are previous and next photos -->
                     {% if page_obj.has_previous and page_obj.has_next %}
-                        <a href="?{% url_query_append_tag request 'page' page_obj.previous_page_number %}">
+                        <a href="?{% url_query_append_tag request 'page' page_obj.previous_page_number %}page={{ page_obj.previous_page_number }}">
                             <i class="fa-solid fa-arrow-left"></i>
                         </a>
                         <a href="?{% url_query_append_tag request 'page' page_obj.next_page_number %}">
