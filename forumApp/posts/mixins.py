@@ -1,4 +1,9 @@
+from datetime import time
+
+
 from django import forms
+from django.http import HttpResponseForbidden
+from django.utils.timezone import localtime
 
 
 class DisableFieldMixin(forms.Form):
@@ -10,3 +15,19 @@ class DisableFieldMixin(forms.Form):
         for field_name, field in self.fields.items():
             if self.disabled_fields[0] == '__all__' or field_name in self.disabled_fields:
                 field.disabled = True
+
+
+class TimeRestrictedMixin:
+    start_time = time(9, 0)
+    end_time = time(17, 0)
+    forbidden_message = "Access restricted to time between 9:00 and 17:00."
+
+    def dispatch(self, request, *args, **kwargs):
+        current_time = localtime().time()
+
+        if not (self.start_time <= current_time <= self.end_time):
+            return HttpResponseForbidden(self.forbidden_message)
+
+        return super().dispatch(request, *args, **kwargs)
+
+

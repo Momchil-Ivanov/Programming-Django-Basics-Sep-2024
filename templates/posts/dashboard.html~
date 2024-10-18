@@ -7,7 +7,7 @@
     <div class="container">
     {% include 'posts/search-form.html' with x='Hello' %}
          <div class="posts">
-        {% for post in  %}
+        {% for post in posts %}
             <a id="post-url" href="{% url 'details-post' post.pk %}">
                          <div class="post">
                     <h2>{{ post.title|capfirst }}</h2>
@@ -26,6 +26,26 @@
         {% empty %}
             <h1>No posts</h1>
         {% endfor %}
+         {% if not page_obj.has_next and page_obj.number == 1 %}
+             <p>That's the only page</p>
+         {% else %}
+             <div class="pagination">
+             <span class="step-links">
+             {% if page_obj.has_previous %}
+                 <a href="?page=1">&laquo; first</a>
+                 <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+             {% endif %}
+                 <span class="current">
+             Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+             </span>
+                 {% if page_obj.has_next %}
+                     <a href="?page={{ page_obj.next_page_number }}">next</a>
+                     <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                 {% endif %}
+             </span>
+             </div>
+         {% endif %}
+
     </div>
     </div>
 {% endblock %}
