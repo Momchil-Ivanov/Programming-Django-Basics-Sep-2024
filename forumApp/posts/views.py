@@ -41,9 +41,9 @@ class BaseView:
 
 
 @method_decorator(measure_execution_time, name='dispatch')
-class IndexView(TimeRestrictedMixin, TemplateView):
+class IndexView(TemplateView):
     template_name = 'common/index.html'  # static_way
-    end_time = time(17, 0)
+    end_time = time(0, 0)
     extra_context = {
         'static_time': datetime.now(),
     }  # static way
@@ -79,17 +79,27 @@ class DashboardView(ListView, FormView):
     model = Post
 
     def get_queryset(self):
+        queryset = self.model.objects.all()
+
+        if 'posts.can_approve_posts' not in self.request.user.get_group_permissions() or not self.request.user.has_perm('posts.can_approve_posts'):
+            queryset = queryset.filter(approved=True)
 
         queryset = self.model.objects.all()
         if 'query' in self.request.GET:
             query = self.request.GET.get('query')
-            if query:
-                queryset = self.queryset.filter(title__icontains=query)
+            queryset = queryset.filter(title__icontains=query)
 
         return queryset
 
 
-class AddPostView(CreateView):
+def approve_post(request, pk):
+    post = Post.objects.get(id=pk)
+    post.approved = True
+    post.save()
+    return redirect(request.META.get('HTTP_REFERER'))
+
+
+class AddPostView(LoginRequiredMixin, CreateView):
     model = Post
     form_class = PostCreateForm
     template_name = 'posts/add-post.html'
