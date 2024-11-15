@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Edit Author's Profile Form -->
+<section id="register">
+  <div class="form">
+    <h2>Edit Author's Profile</h2>
+
+    <form class="register-form" method="post" action="">
+      {% csrf_token %}
+      
+      <div>
+        <label for="{{ form.first_name.id_for_label }}">First Name:</label>
+        {{ form.first_name }}
+        {% if form.first_name.errors %}
+          <div class="error">{{ form.first_name.errors }}</div>
+        {% endif %}
+      </div>
+
+      <div>
+        <label for="{{ form.last_name.id_for_label }}">Last Name:</label>
+        {{ form.last_name }}
+        {% if form.last_name.errors %}
+          <div class="error">{{ form.last_name.errors }}</div>
+        {% endif %}
+      </div>
+
+      <div>
+        <label for="{{ form.pets_number.id_for_label }}">Pets Number:</label>
+        {{ form.pets_number }}
+        {% if form.pets_number.errors %}
+          <div class="error">{{ form.pets_number.errors }}</div>
+        {% endif %}
+      </div>
+
+      <div>
+        <label for="{{ form.info.id_for_label }}">Info:</label>
+        {{ form.info }}
+        {% if form.info.errors %}
+          <div class="error">{{ form.info.errors }}</div>
+        {% endif %}
+      </div>
+
+      <div>
+        <label for="{{ form.image_url.id_for_label }}">Profile Image URL:</label>
+        {{ form.image_url }}
+        {% if form.image_url.errors %}
+          <div class="error">{{ form.image_url.errors }}</div>
+        {% endif %}
+      </div>
+
+      <!-- form button -->
+      <button type="submit">Edit</button>
+    </form>
+  </div>
+</section>
+{% endblock %}

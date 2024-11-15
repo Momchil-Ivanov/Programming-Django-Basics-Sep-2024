@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Add Post Form -->
+<section id="create">
+  <div class="form">
+    <h2>New Post</h2>
+
+    <form class="create-form" action="" method="post">
+      {% csrf_token %}
+      {{ form.non_field_errors }}
+
+      <div>
+        <label for="{{ form.title.id_for_label }}">Title:</label>
+        {{ form.title }}
+        {{ form.title.errors }}
+      </div>
+
+      <div>
+        <label for="{{ form.image_url.id_for_label }}">Post Image URL:</label>
+        <div class="helptext" id="id_image_url_helptext">
+          {{ form.image_url.help_text }}
+        </div>
+        {{ form.image_url }}
+        {{ form.image_url.errors }}
+      </div>
+
+      <div>
+        <label for="{{ form.content.id_for_label }}">Content:</label>
+        {{ form.content }}
+        {{ form.content.errors }}
+      </div>
+
+      <!-- form button -->
+      <button type="submit">Publish</button>
+    </form>
+  </div>
+</section>
+{% endblock %}
